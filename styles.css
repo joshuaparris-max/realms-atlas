@@ -1,0 +1,471 @@
+/* The Atlas of Broken Realms - Styles */
+
+:root {
+    --primary-bg: #1a1a2e;
+    --secondary-bg: #16213e;
+    --accent-bg: #0f3460;
+    --text-color: #e94560;
+    --text-secondary: #533483;
+    --border-color: #533483;
+    --highlight: #e94560;
+    --success: #2e8b57;
+    --warning: #daa520;
+    --error: #cd5c5c;
+    --portal-stable: #4a90e2;
+    --portal-echo: #9b59b6;
+    --portal-broken: #e74c3c;
+    --portal-sealed: #95a5a6;
+    --portal-hidden: #f39c12;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background: var(--primary-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+#game-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: var(--highlight);
+    text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+    margin-bottom: 10px;
+}
+
+#status-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+#game-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    height: calc(100vh - 150px);
+}
+
+#map-panel {
+    grid-column: 1;
+    grid-row: 1 / -1;
+    background: var(--secondary-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#map-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#map-controls button {
+    background: var(--accent-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#map-controls button.active {
+    background: var(--highlight);
+    color: var(--primary-bg);
+}
+
+#map-controls button:hover {
+    background: var(--text-secondary);
+}
+
+#map-container {
+    flex: 1;
+    overflow: auto;
+    background: #000;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 16px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#map-display {
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+    line-height: 1.45;
+    white-space: pre;
+    color: var(--text-color);
+    letter-spacing: 0;
+    user-select: none;
+}
+
+#map-display .map-tile {
+    display: inline-flex;
+    width: 1.25em;
+    height: 1.25em;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+#map-display .player {
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255,255,255,0.85);
+    font-weight: bold;
+}
+
+#map-display .road { color: #f4d35e; }
+#map-display .crossroads { color: #f59e0b; }
+#map-display .plains { color: #7dd3a7; }
+#map-display .forest,
+#map-display .deep_forest,
+#map-display .tree { color: #4ade80; }
+#map-display .caves { color: #a78bfa; }
+#map-display .city,
+#map-display .tower,
+#map-display .ruins { color: #93c5fd; }
+#map-display .sky { color: #c4b5fd; }
+
+#info-panel {
+    grid-column: 2;
+    grid-row: 1;
+    background: var(--secondary-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#location-description h3,
+#nearby-panel h3,
+#portals-panel h3 {
+    color: var(--highlight);
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 5px;
+}
+
+#description-text {
+    font-style: italic;
+}
+
+#nearby-list,
+#portals-list {
+    list-style: none;
+}
+
+#nearby-list li,
+#portals-list li {
+    margin-bottom: 5px;
+    padding: 5px;
+    background: var(--accent-bg);
+    border-radius: 4px;
+}
+
+#portals-list li {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#portals-list li:hover {
+    background: var(--text-secondary);
+}
+
+#portals-list li.discovered {
+    border-left: 4px solid var(--portal-stable);
+}
+
+#portals-list li.visited {
+    border-left: 4px solid var(--success);
+}
+
+#portals-list li.broken {
+    border-left: 4px solid var(--portal-broken);
+    opacity: 0.7;
+}
+
+#portals-list li.sealed {
+    border-left: 4px solid var(--portal-sealed);
+    opacity: 0.5;
+}
+
+#portals-list li.hidden {
+    border-left: 4px solid var(--portal-hidden);
+    font-style: italic;
+}
+
+#actions-panel {
+    grid-column: 2;
+    grid-row: 2;
+    background: var(--secondary-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#command-input {
+    display: flex;
+    gap: 10px;
+}
+
+#command-field {
+    flex: 1;
+    background: var(--accent-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 8px;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+#command-field:focus {
+    outline: none;
+    border-color: var(--highlight);
+}
+
+#submit-cmd {
+    background: var(--highlight);
+    color: var(--primary-bg);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#submit-cmd:hover {
+    background: var(--text-secondary);
+}
+
+#quick-actions {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.action-btn {
+    background: var(--accent-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9em;
+}
+
+.action-btn:hover {
+    background: var(--text-secondary);
+}
+
+#log-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#log-panel h3 {
+    color: var(--highlight);
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 5px;
+}
+
+#event-log {
+    flex: 1;
+    background: var(--accent-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 10px;
+    overflow-y: auto;
+    max-height: 200px;
+}
+
+#event-log p {
+    margin-bottom: 8px;
+    font-size: 0.9em;
+}
+
+/* Modal styles */
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: var(--secondary-bg);
+    margin: 10% auto;
+    padding: 20px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.close {
+    color: var(--text-color);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: var(--highlight);
+}
+
+#journal-content,
+#settings-content {
+    margin-top: 20px;
+}
+
+#journal-content p {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: var(--accent-bg);
+    border-radius: 4px;
+}
+
+#settings-content label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#settings-content button {
+    background: var(--error);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#settings-content button:hover {
+    background: #b22222;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #game-layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        height: auto;
+    }
+    
+    #map-panel {
+        grid-column: 1;
+        grid-row: 1;
+        height: 360px;
+    }
+
+    #map-display {
+        font-size: 15px;
+    }
+    
+    #info-panel {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    #actions-panel {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    #quick-actions {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+}
+
+/* Animation classes */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.slide-in {
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-20px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* Portal type indicators */
+.portal-stable::before { content: "● "; color: var(--portal-stable); }
+.portal-echo::before { content: "○ "; color: var(--portal-echo); }
+.portal-broken::before { content: "✗ "; color: var(--portal-broken); }
+.portal-sealed::before { content: "🔒 "; color: var(--portal-sealed); }
+.portal-hidden::before { content: "? "; color: var(--portal-hidden); }
+#nearby-list li.hint {
+    border-left: 3px solid var(--warning);
+}
+
+#map-display .portal {
+    text-shadow: 0 0 6px currentColor;
+}
+
+#map-display .unknown {
+    opacity: 0.35;
+}
+
+#map-display .portal.stable { color: var(--portal-stable); }
+#map-display .portal.echo { color: var(--portal-echo); }
+#map-display .portal.broken { color: var(--portal-broken); }
+#map-display .portal.sealed { color: var(--portal-sealed); }
+#map-display .portal.hidden { color: var(--portal-hidden); }

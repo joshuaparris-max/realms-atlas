@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Atlas of Broken Realms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <header>
+            <h1>The Atlas of Broken Realms</h1>
+            <div id="status-bar">
+                <span id="player-position">Lantern Crossroads</span>
+                <span id="discovery-count">Realms Discovered: 0</span>
+            </div>
+        </header>
+        
+        <div id="game-layout">
+            <div id="map-panel">
+                <div id="map-controls">
+                    <button id="local-map-btn" class="active">Local</button>
+                    <button id="region-map-btn">Region</button>
+                    <button id="world-atlas-btn">Atlas</button>
+                </div>
+                <div id="map-container">
+                    <pre id="map-display"></pre>
+                </div>
+            </div>
+            
+            <div id="info-panel">
+                <div id="location-description">
+                    <h3>Current Location</h3>
+                    <p id="description-text">You stand at the Lantern Crossroads, where nine roads leave the same hill in nine impossible directions. To the west, the trees murmur secrets. Beneath your feet, something hollow answers from below. Far off, towers of glass and paperwork catch the sun.</p>
+                </div>
+                
+                <div id="nearby-panel">
+                    <h3>Nearby</h3>
+                    <ul id="nearby-list">
+                        <li>Whispering pines to the west</li>
+                        <li>Stone hatch beneath your feet</li>
+                        <li>Brass city gate to the east</li>
+                    </ul>
+                </div>
+                
+                <div id="portals-panel">
+                    <h3>Portals</h3>
+                    <ul id="portals-list">
+                        <!-- Portals will be populated here -->
+                    </ul>
+                </div>
+            </div>
+            
+            <div id="actions-panel">
+                <div id="command-input">
+                    <input type="text" id="command-field" placeholder="Enter command..." autocomplete="off">
+                    <button id="submit-cmd">Go</button>
+                </div>
+                
+                <div id="quick-actions">
+                    <button class="action-btn" data-cmd="north">North</button>
+                    <button class="action-btn" data-cmd="south">South</button>
+                    <button class="action-btn" data-cmd="east">East</button>
+                    <button class="action-btn" data-cmd="west">West</button>
+                    <button class="action-btn" data-cmd="look">Look</button>
+                    <button class="action-btn" data-cmd="map">Map</button>
+                    <button class="action-btn" data-cmd="journal">Journal</button>
+                </div>
+                
+                <div id="log-panel">
+                    <h3>Event Log</h3>
+                    <div id="event-log">
+                        <p>Welcome, Wayfarer. The Atlas awaits your footsteps.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="journal-modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Your Journal</h2>
+                <div id="journal-content">
+                    <!-- Journal entries will be populated here -->
+                </div>
+            </div>
+        </div>
+        
+        <div id="settings-modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Settings</h2>
+                <div id="settings-content">
+                    <label><input type="checkbox" id="sound-toggle"> Enable Sound</label><br>
+                    <label><input type="checkbox" id="compact-toggle"> Compact Mode</label><br>
+                    <label><input type="checkbox" id="reduced-motion-toggle"> Reduced Motion</label><br>
+                    <button id="reset-game">Reset Game</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="data/regions.js"></script>
+    <script src="data/portals.js"></script>
+    <script src="systems/save.js"></script>
+    <script src="systems/map.js"></script>
+    <script src="systems/render.js"></script>
+    <script src="systems/input.js"></script>
+    <script src="systems/gameState.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
