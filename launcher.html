@@ -46,12 +46,14 @@
   <div class="controls">
     <input type="search" id="q" placeholder="Search portals…">
     <button class="chip active" data-f="all">All</button>
+    <button class="chip" data-f="fav">★ Favourites</button>
     <button class="chip" data-f="game">Games</button>
     <button class="chip" data-f="wellbeing">Wellbeing</button>
     <button class="chip" data-f="tools">Tools</button>
     <button class="chip" data-f="utility">Utility</button>
     <button class="chip" data-f="fun">Fun</button>
   </div>
+  <div id="statsLine" style="text-align:center;color:var(--muted);font-size:.84rem;margin-bottom:6px"></div>
   <div id="out"></div>
 </div>
 <script>
@@ -60,11 +62,20 @@ let DATA={regions:[]}, filter='all', query='';
 fetch('portals.json').then(r=>r.json()).then(d=>{ DATA=d; render(); })
   .catch(()=>{ $('out').innerHTML='<div class="empty">Could not load portals.json. Check the file is present.</div>'; });
 
+const FKEY='realmsatlas_favs';
+function favs(){ try{ return JSON.parse(localStorage.getItem(FKEY))||[]; }catch(e){ return []; } }
+function toggleFav(name){ const f=favs(); const i=f.indexOf(name); i<0?f.push(name):f.splice(i,1); localStorage.setItem(FKEY,JSON.stringify(f)); render(); }
+function renderStats(){
+  const all=DATA.regions.flatMap(r=>r.portals);
+  const live=all.filter(p=>p.status==='live').length;
+  $('statsLine').textContent=`${all.length} portals · ${live} live · ${favs().length} favourited`;
+}
 function render(){
+  renderStats();
   const out=$('out'); out.innerHTML='';
-  let shown=0;
+  let shown=0; const F=favs();
   DATA.regions.forEach(reg=>{
-    const items=reg.portals.filter(p=>(filter==='all'||p.category===filter) && (p.name+ ' '+p.desc).toLowerCase().includes(query));
+    const items=reg.portals.filter(p=>(filter==='all'||(filter==='fav'?F.includes(p.name):p.category===filter)) && (p.name+ ' '+p.desc).toLowerCase().includes(query));
     if(!items.length) return;
     shown+=items.length;
     const sec=document.createElement('div'); sec.className='region';
@@ -73,13 +84,15 @@ function render(){
     items.forEach(p=>{
       const card=document.createElement('div'); card.className='portal';
       const badgeClass=({live:'live',prototype:'prototype',repair:'repair',idea:'idea'})[p.status]||'idea';
-      card.innerHTML=`<h3>${esc(p.name)} <span class="badge ${badgeClass}">${p.status}</span></h3>
+      const isFav=F.includes(p.name);
+      card.innerHTML=`<h3>${esc(p.name)} <span class="badge ${badgeClass}">${p.status}</span> <span class="fav" data-fav="${esc(p.name)}" style="margin-left:auto;cursor:pointer;color:${isFav?'#ffd166':'var(--muted)'}">${isFav?'★':'☆'}</span></h3>
         <div class="cat">${esc(p.category)}</div>
         <div class="desc">${esc(p.desc)}</div>
         <div class="links">
           ${p.live?`<a class="play" href="${p.live}" target="_blank" rel="noopener">Open ↗</a>`:''}
           ${p.repo?`<a href="${p.repo}" target="_blank" rel="noopener">Code</a>`:''}
         </div>`;
+      card.querySelector('.fav').onclick=()=>toggleFav(p.name);
       grid.appendChild(card);
     });
     sec.appendChild(grid); out.appendChild(sec);
