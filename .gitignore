@@ -1,0 +1,8 @@
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+
+# Personal scratch reference (contains local paths & private links)
+Josh App Links.txt

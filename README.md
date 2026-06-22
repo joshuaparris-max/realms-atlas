@@ -131,6 +131,55 @@ This game is designed to be easily extensible. To add new regions, portals, or f
 3. **New Features**: Extend the system classes in `/systems/`
 4. **UI Changes**: Modify `styles.css` and `index.html`
 
+## Purpose
+
+`realms-atlas` is a **portfolio gateway**: a single, playful entry point that ties Josh's
+many web apps and games together as a fantasy overworld. Rather than a flat list of links,
+each project is a "portal" placed in a themed region, discovered through exploration. It
+doubles as a fun showcase piece and a practical launcher.
+
+## Portal & link validation notes
+
+- Portals are defined in [`data/portals.js`](data/portals.js) — currently **61 portals**.
+- Each portal has a `portalType` that signals link health:
+  - `stable` (42) — expected to work
+  - `echo` (16) — alternate version or mirror of another project
+  - `broken` (2) — known to be down or non-functional
+  - `sealed` (1) — intentionally not yet accessible
+- Because portals open external deployments (Vercel, GitHub Pages, itch.io), links can rot
+  over time. Treat `portalType` as the source of truth and update it as deployments change.
+- To re-validate, open `data/portals.js` and check each `url`. Mark anything dead as
+  `portalType: 'broken'` so it renders accordingly instead of silently failing.
+
+## Portal status (known)
+
+A few linked deployments are known to be unreliable and are/should be flagged `broken`:
+
+- **Parris Dubbo Mover** — client loads but its API/backend is down.
+- **ClearCore** / **Forbidden Quests** — observed returning blank pages.
+
+The strongest, reliably-working portals include JoshHub, the Parris Tech apps, LifeHub
+Dashboard, Null, Mystery Depths, StarHaven, and Wild2.
+
+## Fallback behaviour
+
+- The portal **sidebar list** always shows discovered portals as plain clickable entries,
+  so the experience degrades gracefully even if the ASCII map view is hard to read.
+- A `<noscript>` block explains the project and points to this README when JavaScript is
+  disabled.
+
+## Known issues
+
+- The ASCII/text map can be dense on small screens — use the sidebar portal list instead.
+- Link rot: external portals may go offline; statuses need periodic review (see above).
+- No automated link-checker yet (see Future improvements).
+
+## Future improvements
+
+- A small automated link-checker script to flag dead `url`s and auto-suggest `broken`.
+- Optional grid/graphical map layer on top of the ASCII view.
+- A simple "list all portals" view for quick scanning without exploration.
+
 ## License
 
 This project is part of Josh's portfolio and is shared for demonstration purposes.
