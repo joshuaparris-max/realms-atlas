@@ -1,0 +1,24 @@
+{
+  "updated": "2026-06",
+  "regions": [
+    {
+      "id": "revived-isles",
+      "name": "The Revived Isles",
+      "blurb": "Twelve small repos reborn as distinct, working MVPs.",
+      "portals": [
+        { "name": "JoshCoach", "category": "wellbeing", "status": "live", "desc": "Local-first daily micro-coach: check-in, cards, reflections, streak.", "repo": "https://github.com/joshuaparris-max/JoshCoach", "live": "https://joshuaparris-max.github.io/JoshCoach/" },
+        { "name": "FireReady", "category": "utility", "status": "live", "desc": "Household fire-readiness checklist + scenario practice (non-official).", "repo": "https://github.com/joshuaparris-max/JoshFireAwareness", "live": "https://joshuaparris-max.github.io/JoshFireAwareness/" },
+        { "name": "JoshHub-Local", "category": "tools", "status": "prototype", "desc": "Local-first life dashboard: links, notes, tasks, routines, health.", "repo": "https://github.com/joshuaparris-max/JoshHub-Local", "live": "" },
+        { "name": "JoshPlatform", "category": "tools", "status": "prototype", "desc": "Mini app platform / experiment runtime.", "repo": "https://github.com/joshuaparris-max/JoshPlatform", "live": "" },
+        { "name": "random-play", "category": "fun", "status": "live", "desc": "Serendipity launcher — pick a vibe, get a random pick.", "repo": "https://github.com/joshuaparris-max/random-play", "live": "https://joshuaparris-max.github.io/random-play/" },
+        { "name": "realms-atlas", "category": "tools", "status": "live", "desc": "This fantasy portfolio world map + launcher.", "repo": "https://github.com/joshuaparris-max/realms-atlas", "live": "https://joshuaparris-max.github.io/realms-atlas/" },
+        { "name": "StarHaven", "category": "game", "status": "live", "desc": "Original tiny space RPG — 3 missions, 6 endings.", "repo": "https://github.com/joshuaparris-max/StarHaven", "live": "https://joshuaparris-max.github.io/StarHaven/" },
+        { "name": "Wild2", "category": "game", "status": "live", "desc": "Original wilderness fantasy RPG — 4 classes, 5 endings.", "repo": "https://github.com/joshuaparris-max/Wild2", "live": "https://joshuaparris-max.github.io/Wild2/" },
+        { "name": "AnchorFlow", "category": "wellbeing", "status": "live", "desc": "Calm focus flow: anchor, ground, focus timer, close.", "repo": "https://github.com/joshuaparris-max/AnchorFlow", "live": "https://joshuaparris-max.github.io/AnchorFlow/" },
+        { "name": "JoshChess", "category": "game", "status": "live", "desc": "Beginner/kid chess mini-trainer (companion to the main Chess app).", "repo": "https://github.com/joshuaparris-max/JoshChess", "live": "https://joshuaparris-max.github.io/JoshChess/" },
+        { "name": "skills", "category": "tools", "status": "live", "desc": "IT support skill-tree tracker with confidence + evidence.", "repo": "https://github.com/joshuaparris-max/skills", "live": "https://joshuaparris-max.github.io/skills/" },
+        { "name": "Waypoint", "category": "wellbeing", "status": "live", "desc": "Decision navigator: overwhelm to one clear next step.", "repo": "https://github.com/joshuaparris-max/Waypoint", "live": "https://joshuaparris-max.github.io/Waypoint/" }
+      ]
+    }
+  ]
+}
