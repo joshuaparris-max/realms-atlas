@@ -187,3 +187,14 @@ This project is part of Josh's portfolio and is shared for demonstration purpose
 ## Credits
 
 Created by Josh as a meta-exploration game for his web development portfolio. All linked projects are also created by Josh unless otherwise noted.
+## Portal Index (list view) & The Revived Isles
+
+Alongside the immersive map, there is now a plain, reliable **Portal Index** at
+[`launcher.html`](launcher.html): a searchable, filterable list of every portal with honest
+**status badges** (Live / Prototype / Needs repair / Idea) and direct *Open* + *Code* links.
+It reads from [`portals.json`](portals.json) — the single place to edit portal data.
+
+A special region, **The Revived Isles**, collects the 12 small repos revived as working MVPs
+(games, wellbeing tools, trackers) with their live links. The map and the list cross-link.
+
+See [STATUS.md](STATUS.md) for current state and next steps.

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atlas of Realms — Portal Index</title>
+<style>
+  :root { --bg:#0c0a14; --card:#161226; --line:#2a2444; --text:#ece8ff; --muted:#9b93c4; --accent:#b18bff; --live:#6ee7a8; --proto:#ffd166; --repair:#ff8a7a; --idea:#7bc5ff; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif; background:radial-gradient(circle at 50% -10%,#1c1638,#0c0a14); color:var(--text); min-height:100vh; padding:0 16px 40px; line-height:1.55; }
+  .wrap { max-width:920px; margin:0 auto; }
+  header { text-align:center; padding:28px 0 10px; }
+  header h1 { font-size:2rem; letter-spacing:.04em; }
+  header p { color:var(--muted); }
+  .controls { display:flex; gap:8px; flex-wrap:wrap; justify-content:center; margin:14px 0; }
+  input[type=search] { background:var(--card); border:1px solid var(--line); color:var(--text); border-radius:999px; padding:9px 16px; min-width:200px; font-size:.9rem; }
+  .chip { background:var(--card); border:1px solid var(--line); color:var(--text); border-radius:999px; padding:8px 14px; cursor:pointer; font-size:.84rem; }
+  .chip.active { background:var(--accent); border-color:var(--accent); color:#160a2a; font-weight:600; }
+  .region { margin-top:22px; }
+  .region h2 { font-size:1.3rem; }
+  .region .blurb { color:var(--muted); font-size:.9rem; margin-bottom:12px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:12px; }
+  .portal { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px; display:flex; flex-direction:column; }
+  .portal h3 { font-size:1.05rem; display:flex; align-items:center; gap:8px; }
+  .badge { font-size:.66rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; padding:2px 8px; border-radius:999px; }
+  .badge.live { background:rgba(110,231,168,.15); color:var(--live); border:1px solid var(--live); }
+  .badge.prototype { background:rgba(255,209,102,.13); color:var(--proto); border:1px solid var(--proto); }
+  .badge.repair { background:rgba(255,138,122,.13); color:var(--repair); border:1px solid var(--repair); }
+  .badge.idea { background:rgba(123,197,255,.13); color:var(--idea); border:1px solid var(--idea); }
+  .portal .cat { color:var(--muted); font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; margin:4px 0; }
+  .portal .desc { color:var(--text); font-size:.9rem; flex:1; margin-bottom:10px; }
+  .portal .links { display:flex; gap:8px; }
+  .portal a { font-size:.82rem; text-decoration:none; padding:6px 12px; border-radius:8px; border:1px solid var(--line); color:var(--text); }
+  .portal a.play { background:var(--accent); border-color:var(--accent); color:#160a2a; font-weight:600; }
+  .empty { text-align:center; color:var(--muted); padding:30px; }
+  .nav { text-align:center; margin-bottom:10px; }
+  .nav a { color:var(--accent); font-size:.85rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>🗺️ Atlas of Realms — Portal Index</h1>
+    <p>A plain, reliable list view of every portal. (For the immersive map, see <a href="index.html" style="color:var(--accent)">the overworld</a>.)</p>
+  </header>
+  <div class="controls">
+    <input type="search" id="q" placeholder="Search portals…">
+    <button class="chip active" data-f="all">All</button>
+    <button class="chip" data-f="game">Games</button>
+    <button class="chip" data-f="wellbeing">Wellbeing</button>
+    <button class="chip" data-f="tools">Tools</button>
+    <button class="chip" data-f="utility">Utility</button>
+    <button class="chip" data-f="fun">Fun</button>
+  </div>
+  <div id="out"></div>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+let DATA={regions:[]}, filter='all', query='';
+fetch('portals.json').then(r=>r.json()).then(d=>{ DATA=d; render(); })
+  .catch(()=>{ $('out').innerHTML='<div class="empty">Could not load portals.json. Check the file is present.</div>'; });
+
+function render(){
+  const out=$('out'); out.innerHTML='';
+  let shown=0;
+  DATA.regions.forEach(reg=>{
+    const items=reg.portals.filter(p=>(filter==='all'||p.category===filter) && (p.name+ ' '+p.desc).toLowerCase().includes(query));
+    if(!items.length) return;
+    shown+=items.length;
+    const sec=document.createElement('div'); sec.className='region';
+    sec.innerHTML=`<h2>${esc(reg.name)}</h2><div class="blurb">${esc(reg.blurb||'')}</div>`;
+    const grid=document.createElement('div'); grid.className='grid';
+    items.forEach(p=>{
+      const card=document.createElement('div'); card.className='portal';
+      const badgeClass=({live:'live',prototype:'prototype',repair:'repair',idea:'idea'})[p.status]||'idea';
+      card.innerHTML=`<h3>${esc(p.name)} <span class="badge ${badgeClass}">${p.status}</span></h3>
+        <div class="cat">${esc(p.category)}</div>
+        <div class="desc">${esc(p.desc)}</div>
+        <div class="links">
+          ${p.live?`<a class="play" href="${p.live}" target="_blank" rel="noopener">Open ↗</a>`:''}
+          ${p.repo?`<a href="${p.repo}" target="_blank" rel="noopener">Code</a>`:''}
+        </div>`;
+      grid.appendChild(card);
+    });
+    sec.appendChild(grid); out.appendChild(sec);
+  });
+  if(!shown) out.innerHTML='<div class="empty">No portals match your search.</div>';
+}
+function esc(s){ return (s||'').replace(/[<>&]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;'}[c])); }
+$('q').oninput=e=>{ query=e.target.value.toLowerCase(); render(); };
+document.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{ document.querySelectorAll('.chip').forEach(x=>x.classList.remove('active')); c.classList.add('active'); filter=c.dataset.f; render(); });
+</script>
+</body>
+</html>
