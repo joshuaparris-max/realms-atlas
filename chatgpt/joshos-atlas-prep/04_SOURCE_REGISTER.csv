@@ -1,0 +1,70 @@
+source_id,source_name,source_type,location_or_url,sensitivity,owner,include_now,include_later,notes
+doc_app_audit_2026,__@App Audit 2026.docx,audit,Google Drive/private upload,private-medium,Josh,yes,no,Core app ecosystem audit
+doc_app_links_2026,Pasted text app links,doc,Google Drive/private upload,private-medium,Josh,yes,no,Live app and repo links
+doc_todo_master,TODO_MASTER.md,doc,local/private upload,private-medium,Josh,yes,no,Cross-project backlog
+doc_computer3_audit,Computer 3 Audit iMac Retina,doc,local/private upload,private-medium,Josh,yes,no,Local machine and repo state
+doc_github_audit_2026,github_repo_audit_22_may_2026.pdf,audit,Google Drive/private upload,private-medium,Josh,yes,no,Repo audit
+doc_family_public_threat_model,family_public_information_threat_model.pdf,privacy-report,private upload,private-high,Josh,yes,no,Privacy rules only
+doc_sylvie_privacy_audit,sylvie_child_privacy_osint_audit.pdf,privacy-report,private upload,private-high,Josh,yes,no,Privacy rules only
+doc_elias_privacy_audit,elias_child_privacy_osint_audit.pdf,privacy-report,private upload,private-high,Josh,yes,no,Privacy rules only
+repo_joshhub,JoshHub,repo,https://github.com/joshualparris/JoshHub,private-low,Josh,yes,no,Potential canonical hub
+repo_lifehub,LifeHub,repo,https://github.com/joshualparris/LifeHub,private-low,Josh,yes,no,Dashboard overlap
+repo_parris_life_dashboard,Parris-Life-Dashboard,repo,https://github.com/joshualparris/Parris-Life-Dashboard,private-low,Josh,yes,no,Dashboard overlap
+repo_clearcore,ClearCore,repo,https://github.com/joshualparris/ClearCore,private-low,Josh,yes,no,Dashboard/productivity overlap
+repo_appfactory,AppFactory,repo,https://github.com/joshuaparris-max/AppFactory,private-low,Josh,yes,no,AI app builder
+repo_dcsprep,DCSPrep,repo,https://github.com/joshualparris/DCSPrep,private-medium,Josh,yes,no,Work-related app; redact school data
+repo_dcscompanion,DCSCompanion,repo,https://github.com/joshuaparris-max/DCSCompanion,private-medium,Josh,yes,no,Work-related app; redact school data
+repo_avancepd,AvancePD,repo,https://github.com/joshparri/AvancePD,private-medium,Josh,yes,no,Work/professional development
+repo_avanceprofessionaldevelopment,AvanceProfessionalDevelopment,repo,https://github.com/joshparri/AvanceProfessionalDevelopment,private-medium,Josh,yes,no,Work/professional development
+repo_workapp,WorkApp,repo,https://github.com/joshualparris/WorkApp,private-medium,Josh,yes,no,Deployment failure email exists
+repo_healthlens,HealthLens,repo,https://github.com/joshualparris/HealthLens,private-high,Josh,yes,no,Health-related; no raw health data
+repo_parrisbudget,ParrisBudgetApp,repo,https://github.com/joshuaparris-max/ParrisBudgetApp,private-medium,Josh,yes,no,Finance learning only; no bank statements
+repo_parristechapp,ParrisTechApp,repo,https://github.com/joshualparris/ParrisTechApp,private-low,Josh,yes,no,Tech/service app
+repo_parristechservices,ParrisTechServicesApp,repo,https://github.com/joshualparris/ParrisTechServicesApp,private-low,Josh,yes,no,Tech/service app overlap
+repo_joshtapapp,JoshTapApp,repo,https://github.com/joshualparris/JoshTapApp,private-low,Josh,yes,no,NFC/tap app
+repo_joshnfcaudio,JoshNFCAudio,repo,https://github.com/joshualparris/JoshNFCAudio,private-low,Josh,yes,no,NFC/audio app
+repo_sleepy,Sleepy,repo,https://github.com/joshualparris/Sleepy,private-high,Josh,yes,no,Child/family app; privacy review
+repo_sylviephonetics,SylviePhonetics,repo,https://github.com/joshualparris/SylviePhonetics,private-high,Josh,yes,no,Child app; privacy review
+repo_sylvieapp,SylvieApp,repo,https://github.com/joshuaparris-max/SylvieApp,private-high,Josh,yes,no,Child app; privacy review
+repo_campaign_copilot,campaign-copilot,repo,https://github.com/joshuaparris-max/campaign-copilot,private-low,Josh,yes,no,D&D/story tool
+repo_realms_atlas,realms-atlas,repo,https://github.com/joshualparris/realms-atlas,private-low,Josh,yes,no,D&D/story tool
+repo_whispering_wilds,Whispering-Wilds,repo,https://github.com/joshualparris/Whispering-Wilds,private-low,Josh,yes,no,Creative/game duplicate risk
+repo_whirring_wilderness,WhirringWilderness,repo,https://github.com/joshuaparris-max/WhirringWilderness,private-low,Josh,yes,no,Creative/game duplicate risk
+repo_ashfallen,AshFallen,repo,https://github.com/joshualparris/AshFallen,private-low,Josh,yes,no,Creative/story project
+repo_bucklandblocks,BucklandBlocks,repo,https://github.com/joshualparris/BucklandBlocks,private-low,Josh,yes,no,Creative/game project
+repo_bucklandblocks1,BucklandBlocks1,repo,https://github.com/joshualparris/BucklandBlocks1,private-low,Josh,yes,no,Duplicate/variant risk
+repo_wastes_courier,wastes-courier-roguelike,repo,https://github.com/joshualparris/wastes-courier-roguelike,private-low,Josh,yes,no,Creative/game project
+repo_swordcoast,SwordCoast,repo,https://github.com/joshualparris/SwordCoast,private-low,Josh,yes,no,D&D/story project
+repo_nebuladice,NebulaDice-Browser,repo,https://github.com/joshualparris/NebulaDice-Browser,private-low,Josh,yes,no,Game/tool project
+repo_elodindeeplore,ElodinDeepLore,repo,https://github.com/joshualparris/ElodinDeepLore,private-low,Josh,yes,no,Creative/lore project
+repo_elodin_deep_lore,elodin-deep-lore,repo,https://github.com/joshualparris/elodin-deep-lore,private-low,Josh,yes,no,Duplicate naming risk
+deploy_joshhub_dashboard,JoshHub dashboard,deployment,https://josh-hub-two.vercel.app/dashboard,private-low,Josh,yes,no,Potential canonical dashboard deployment
+deploy_joshhub_apps,JoshHub apps,deployment,https://josh-hub-96no.vercel.app/apps,private-low,Josh,yes,no,Potential JoshHub deployment
+deploy_appfactory_inky,AppFactory Vercel,deployment,https://appfactory-inky.vercel.app/,private-low,Josh,yes,no,Deployment card needed
+deploy_appfactory_gamma,AppFactory Gamma Vercel,deployment,https://app-factory-gamma.vercel.app/,private-low,Josh,yes,no,Deployment card needed
+deploy_appfactory_pages,AppFactory GitHub Pages,deployment,https://joshuaparris-max.github.io/AppFactory/,private-low,Josh,yes,no,Deployment card needed
+deploy_dcs_prep,DCS Prep Vercel,deployment,https://dcs-prep.vercel.app/,private-medium,Josh,yes,no,Work-related; sample data only
+deploy_dcscompanion,DCSCompanion GitHub Pages,deployment,https://joshuaparris-max.github.io/DCSCompanion,private-medium,Josh,yes,no,Work-related; sample data only
+deploy_avance_pd,Avance PD Vercel,deployment,https://avance-pd.vercel.app/,private-medium,Josh,yes,no,Work-related; sample data only
+deploy_avance_professional_development,Avance Professional Development Vercel,deployment,https://avance-professional-development.vercel.app/,private-medium,Josh,yes,no,Work-related; sample data only
+deploy_lifehub,LifeHub deployment,deployment,https://lifehubdashboard.vercel.app/,private-low,Josh,yes,no,Dashboard overlap
+deploy_clearcore,ClearCore deployment,deployment,https://clearcore.vercel.app/,private-low,Josh,yes,no,Dashboard/productivity overlap
+deploy_hugcoach,HugCoach deployment,deployment,https://hug-coach.vercel.app/,private-low,Josh,yes,no,Family support/coaching; review privacy
+email_github_ci_failures,GitHub CI failure emails,email-thread,Gmail search: subject Run failed/private,private-medium,Josh,yes,no,Summarise only
+email_github_invites,GitHub repo invite emails,email-thread,Gmail search: invited you,private-low,Josh,yes,no,Repo account mapping
+email_property_mould,Property mould thread,email-thread,Gmail search: Mould in shed 101 Boundary Road,private-high,Josh,yes,no,Private tenancy source card only
+email_job_search,Job application emails,email-thread,Gmail search: NAB SEEK application update,private-medium,Josh,yes,no,Career admin source card
+email_ai_tooling,Claude Codex Copilot emails,email-thread,Gmail search: Claude Codex Copilot,private-low,Josh,yes,no,AI tooling/source context
+local_c_dev,C dev folder,local-folder,C:\dev,private-medium,Josh,yes,no,Local workspace inventory
+local_joshhub_1,JoshHub_1 local folder,local-folder,C:\dev\JoshHub_1,private-low,Josh,yes,no,Potential canonical local folder
+local_joshhub,C dev JoshHub local folder,local-folder,C:\dev\JoshHub,private-low,Josh,yes,no,Possible older JoshHub local copy
+local_joshdashboard2,JoshDashboard2 local folder,local-folder,C:\dev\JoshDashboard2,private-low,Josh,yes,no,Dashboard overlap
+local_dcspreapp,DCSPrepApp local folder,local-folder,C:\dev\DCSPrepApp,private-medium,Josh,yes,no,Work-related local folder
+local_git_audit_tool,GitWorkspaceAuditTool_v2 local folder,local-folder,C:\dev\GitWorkspaceAuditTool_v2,private-low,Josh,yes,no,Inventory/support tool
+local_appfactory,AppFactory local folder,local-folder,C:\dev\AppFactory,private-low,Josh,yes,no,AI app builder local workspace
+local_campaign_copilot,campaign-copilot local folder,local-folder,C:\dev\campaign-copilot,private-low,Josh,yes,no,D&D/story tool local workspace
+local_healthlens,HealthLens local folder,local-folder,C:\dev\HealthLens,private-high,Josh,yes,no,Health-related local workspace; no raw health data
+local_workapp,WorkApp local folder,local-folder,C:\dev\WorkApp,private-medium,Josh,yes,no,Deployment failure and work-related app
+local_whirringwilderness,WhirringWilderness local folder,local-folder,C:\dev\WhirringWilderness,private-low,Josh,yes,no,Creative/game duplicate risk
+local_whirringwildernessv28,WhirringWildernessv28 local folder,local-folder,C:\dev\WhirringWildernessv28,private-low,Josh,yes,no,Possible duplicate or generated version
+local_projects_onedrive,03_Projects OneDrive folder,local-folder,C:\Users\joshua.parris\OneDrive - Dubbo Christian School\Documents\03_Projects,private-high,Josh,no,yes,Do not upload raw; summarise later

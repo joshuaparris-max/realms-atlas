@@ -1,0 +1,26 @@
+# JoshOS Atlas repo links
+
+- [joshualparris/JoshHub](https://github.com/joshualparris/JoshHub) — Potential canonical hub
+- [joshualparris/LifeHub](https://github.com/joshualparris/LifeHub) — Dashboard overlap
+- [joshualparris/Parris-Life-Dashboard](https://github.com/joshualparris/Parris-Life-Dashboard) — Dashboard overlap
+- [joshualparris/ClearCore](https://github.com/joshualparris/ClearCore) — Dashboard/productivity overlap
+- [joshuaparris-max/AppFactory](https://github.com/joshuaparris-max/AppFactory) — AI app builder
+- [joshualparris/DCSPrep](https://github.com/joshualparris/DCSPrep) — Work/DCS; redact school data
+- [joshuaparris-max/DCSCompanion](https://github.com/joshuaparris-max/DCSCompanion) — Work/DCS; redact school data
+- [joshparri/AvancePD](https://github.com/joshparri/AvancePD) — Work/professional development
+- [joshparri/AvanceProfessionalDevelopment](https://github.com/joshparri/AvanceProfessionalDevelopment) — Work/professional development
+- [joshualparris/WorkApp](https://github.com/joshualparris/WorkApp) — Work app / deployment failure
+- [joshualparris/HealthLens](https://github.com/joshualparris/HealthLens) — Health app; no raw health data
+- [joshuaparris-max/ParrisBudgetApp](https://github.com/joshuaparris-max/ParrisBudgetApp) — Finance learning only
+- [joshualparris/ParrisTechApp](https://github.com/joshualparris/ParrisTechApp) — Tech/service app
+- [joshualparris/ParrisTechServicesApp](https://github.com/joshualparris/ParrisTechServicesApp) — Tech/service app overlap
+- [joshualparris/JoshTapApp](https://github.com/joshualparris/JoshTapApp) — NFC/tap app
+- [joshualparris/JoshNFCAudio](https://github.com/joshualparris/JoshNFCAudio) — NFC/audio app
+- [joshualparris/Sleepy](https://github.com/joshualparris/Sleepy) — Child/family app; privacy review
+- [joshualparris/SylviePhonetics](https://github.com/joshualparris/SylviePhonetics) — Child app; privacy review
+- [joshuaparris-max/SylvieApp](https://github.com/joshuaparris-max/SylvieApp) — Child app; privacy review
+- [joshuaparris-max/campaign-copilot](https://github.com/joshuaparris-max/campaign-copilot) — D&D/story tool
+- [joshualparris/realms-atlas](https://github.com/joshualparris/realms-atlas) — D&D/story tool
+- [joshualparris/Whispering-Wilds](https://github.com/joshualparris/Whispering-Wilds) — Creative/game duplicate risk
+- [joshuaparris-max/WhirringWilderness](https://github.com/joshuaparris-max/WhirringWilderness) — Creative/game duplicate risk
+- [joshualparris/AshFallen](https://github.com/joshualparris/AshFallen) — Creative/story project
