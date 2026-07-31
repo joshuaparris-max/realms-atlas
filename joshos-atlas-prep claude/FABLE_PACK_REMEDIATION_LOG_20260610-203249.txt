@@ -1,0 +1,77 @@
+﻿2026-06-10 20:32:49  === JoshOS Atlas Fable Pack Remediation Started ===
+2026-06-10 20:32:49  Canonical folder: C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude
+2026-06-10 20:32:49  Clean pack target: C:\dev\joshos-atlas\claude-project-upload-clean-pack
+2026-06-10 20:32:49  Clean zip target: C:\dev\joshos-atlas\claude-project-upload-clean-pack.zip
+2026-06-10 20:32:49  Step 1: Moving forbidden/private-high PDFs out of source-pdfs...
+2026-06-10 20:32:49  MOVED: C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\source-pdfs\elias_child_privacy_osint_audit.pdf -> C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\excluded-private\source-pdfs-private-review\elias_child_privacy_osint_audit.pdf
+2026-06-10 20:32:49  MOVED: C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\source-pdfs\family_public_information_threat_model.pdf -> C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\excluded-private\source-pdfs-private-review\family_public_information_threat_model.pdf
+2026-06-10 20:32:49  MOVED: C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\source-pdfs\Joshua_Parris_OSINT_Audit.pdf -> C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\excluded-private\source-pdfs-private-review\Joshua_Parris_OSINT_Audit.pdf
+2026-06-10 20:32:49  MOVED: C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\source-pdfs\joshua_parris_public_osint_audit.pdf -> C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\excluded-private\source-pdfs-private-review\joshua_parris_public_osint_audit.pdf
+2026-06-10 20:32:49  MOVED: C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\source-pdfs\Mould_Escalation_Report_101_Boundary_Road_Dubbo.pdf -> C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\excluded-private\source-pdfs-private-review\Mould_Escalation_Report_101_Boundary_Road_Dubbo.pdf
+2026-06-10 20:32:49  MOVED: C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\source-pdfs\NDIS Plan Approval Sylvie Parris (1).pdf -> C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\excluded-private\source-pdfs-private-review\NDIS Plan Approval Sylvie Parris (1).pdf
+2026-06-10 20:32:49  MOVED: C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\source-pdfs\Screen_Related_Blurry_Vision_Research_Report.pdf -> C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\excluded-private\source-pdfs-private-review\Screen_Related_Blurry_Vision_Research_Report.pdf
+2026-06-10 20:32:49  MOVED: C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\source-pdfs\Search results - joshua.parris@cornerstone.edu.au - Cornerstone Community Mail.pdf -> C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\excluded-private\source-pdfs-private-review\Search results - joshua.parris@cornerstone.edu.au - Cornerstone Community Mail.pdf
+2026-06-10 20:32:49  MOVED: C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\source-pdfs\Search results - joshua.parris@cornerstone.edu.au - Cornerstone Community Mail1.pdf -> C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\excluded-private\source-pdfs-private-review\Search results - joshua.parris@cornerstone.edu.au - Cornerstone Community Mail1.pdf
+2026-06-10 20:32:49  MOVED: C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\source-pdfs\Search results - joshua.parris@cornerstone.edu.au - Cornerstone Community Mailb.pdf -> C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\excluded-private\source-pdfs-private-review\Search results - joshua.parris@cornerstone.edu.au - Cornerstone Community Mailb.pdf
+2026-06-10 20:32:49  MOVED: C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\source-pdfs\sylvie_child_privacy_osint_audit.pdf -> C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\excluded-private\source-pdfs-private-review\sylvie_child_privacy_osint_audit.pdf
+2026-06-10 20:32:49  MOVED: C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\source-pdfs\Sylvie_Family_Report_April2026 (1).pdf -> C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\excluded-private\source-pdfs-private-review\Sylvie_Family_Report_April2026 (1).pdf
+2026-06-10 20:32:49  MOVED: C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\source-pdfs\____Sylvie Combined NDIS Notes - -25b8265d2d23ba4f (1).pdf -> C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\excluded-private\source-pdfs-private-review\____Sylvie Combined NDIS Notes - -25b8265d2d23ba4f (1).pdf
+2026-06-10 20:32:49  Step 2: Quarantining nested zips, installers, and forbidden files from old safe pack if present...
+2026-06-10 20:32:49  MOVED: C:\dev\joshos-atlas\claude-project-upload-safe-pack\source-pdfs\elias_child_privacy_osint_audit.pdf -> C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\excluded-private\quarantined-from-safe-pack-20260610-203249\elias_child_privacy_osint_audit.pdf
+2026-06-10 20:32:49  MOVED: C:\dev\joshos-atlas\claude-project-upload-safe-pack\source-pdfs\Fable 5 Project-20260610T094418Z-3-001.zip -> C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\excluded-private\quarantined-from-safe-pack-20260610-203249\Fable 5 Project-20260610T094418Z-3-001.zip
+2026-06-10 20:32:49  MOVED: C:\dev\joshos-atlas\claude-project-upload-safe-pack\source-pdfs\family_public_information_threat_model.pdf -> C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\excluded-private\quarantined-from-safe-pack-20260610-203249\family_public_information_threat_model.pdf
+2026-06-10 20:32:49  MOVED: C:\dev\joshos-atlas\claude-project-upload-safe-pack\source-pdfs\Joshua_Parris_OSINT_Audit.pdf -> C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\excluded-private\quarantined-from-safe-pack-20260610-203249\Joshua_Parris_OSINT_Audit.pdf
+2026-06-10 20:32:49  MOVED: C:\dev\joshos-atlas\claude-project-upload-safe-pack\source-pdfs\joshua_parris_public_osint_audit.pdf -> C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\excluded-private\quarantined-from-safe-pack-20260610-203249\joshua_parris_public_osint_audit.pdf
+2026-06-10 20:32:49  MOVED: C:\dev\joshos-atlas\claude-project-upload-safe-pack\source-pdfs\Mould_Escalation_Report_101_Boundary_Road_Dubbo.pdf -> C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\excluded-private\quarantined-from-safe-pack-20260610-203249\Mould_Escalation_Report_101_Boundary_Road_Dubbo.pdf
+2026-06-10 20:32:49  MOVED: C:\dev\joshos-atlas\claude-project-upload-safe-pack\source-pdfs\NDIS Plan Approval Sylvie Parris (1).pdf -> C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\excluded-private\quarantined-from-safe-pack-20260610-203249\NDIS Plan Approval Sylvie Parris (1).pdf
+2026-06-10 20:32:49  MOVED: C:\dev\joshos-atlas\claude-project-upload-safe-pack\source-pdfs\Screen_Related_Blurry_Vision_Research_Report.pdf -> C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\excluded-private\quarantined-from-safe-pack-20260610-203249\Screen_Related_Blurry_Vision_Research_Report.pdf
+2026-06-10 20:32:49  MOVED: C:\dev\joshos-atlas\claude-project-upload-safe-pack\source-pdfs\Search results - joshua.parris@cornerstone.edu.au - Cornerstone Community Mail.pdf -> C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\excluded-private\quarantined-from-safe-pack-20260610-203249\Search results - joshua.parris@cornerstone.edu.au - Cornerstone Community Mail.pdf
+2026-06-10 20:32:49  MOVED: C:\dev\joshos-atlas\claude-project-upload-safe-pack\source-pdfs\Search results - joshua.parris@cornerstone.edu.au - Cornerstone Community Mail1.pdf -> C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\excluded-private\quarantined-from-safe-pack-20260610-203249\Search results - joshua.parris@cornerstone.edu.au - Cornerstone Community Mail1.pdf
+2026-06-10 20:32:49  MOVED: C:\dev\joshos-atlas\claude-project-upload-safe-pack\source-pdfs\Search results - joshua.parris@cornerstone.edu.au - Cornerstone Community Mailb.pdf -> C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\excluded-private\quarantined-from-safe-pack-20260610-203249\Search results - joshua.parris@cornerstone.edu.au - Cornerstone Community Mailb.pdf
+2026-06-10 20:32:49  MOVED: C:\dev\joshos-atlas\claude-project-upload-safe-pack\source-pdfs\sylvie_child_privacy_osint_audit.pdf -> C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\excluded-private\quarantined-from-safe-pack-20260610-203249\sylvie_child_privacy_osint_audit.pdf
+2026-06-10 20:32:49  MOVED: C:\dev\joshos-atlas\claude-project-upload-safe-pack\source-pdfs\Sylvie_Family_Report_April2026 (1).pdf -> C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\excluded-private\quarantined-from-safe-pack-20260610-203249\Sylvie_Family_Report_April2026 (1).pdf
+2026-06-10 20:32:49  MOVED: C:\dev\joshos-atlas\claude-project-upload-safe-pack\source-pdfs\____Sylvie Combined NDIS Notes - -25b8265d2d23ba4f (1).pdf -> C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\excluded-private\quarantined-from-safe-pack-20260610-203249\____Sylvie Combined NDIS Notes - -25b8265d2d23ba4f (1).pdf
+2026-06-10 20:32:49  Step 3: Fixing 04_SOURCE_REGISTER.csv gating...
+2026-06-10 20:32:49  Updated register: C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\04_SOURCE_REGISTER.csv
+2026-06-10 20:32:49  Backup register: C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\04_SOURCE_REGISTER.backup-20260610-203249.csv
+2026-06-10 20:32:49  Step 4: Creating minimum approved-for-fable cards...
+2026-06-10 20:32:49  Step 5: Creating manual security review worksheet...
+2026-06-10 20:32:49  Step 6: Rebuilding clean Claude/Fable upload pack from whitelist...
+2026-06-10 20:32:49  Copied core file: 00_SECURITY_PRECHECK.md
+2026-06-10 20:32:49  Copied core file: SECURITY_PRECHECK_MANUAL_REVIEW_REQUIRED.md
+2026-06-10 20:32:49  Copied core file: 01_PERSONAL_CONTEXT.md
+2026-06-10 20:32:49  Copied core file: 02_PRIVACY_BOUNDARIES.md
+2026-06-10 20:32:49  Copied core file: 03_CANONICAL_GOALS.md
+2026-06-10 20:32:49  Copied core file: 04_SOURCE_REGISTER.csv
+2026-06-10 20:32:49  Copied core file: 05_SEED_DATA_FORMAT.md
+2026-06-10 20:32:49  Copied core file: 06_FABLE_SESSION.md
+2026-06-10 20:32:49  Copied core file: 06_FABLE_PROMPT.md
+2026-06-10 20:32:49  Copied folder: source-cards
+2026-06-10 20:32:49  Copied folder: architecture-draft
+2026-06-10 20:32:49  Copied folder: approved-for-fable
+2026-06-10 20:32:49  Copied folder: download-launcher
+2026-06-10 20:32:49  Copied folder: source-docs
+2026-06-10 20:32:49  Copied safe source PDF: DCS PD Apps Audit.pdf
+2026-06-10 20:32:49  Copied safe source PDF: dcsprep-qa-audit.pdf
+2026-06-10 20:32:49  Excluded source PDF from clean pack: Fable 5 Project-20260610T094418Z-3-001.zip
+2026-06-10 20:32:49  Copied safe source PDF: github_repo_audit_22_may_2026 (1).pdf
+2026-06-10 20:32:49  Copied safe source PDF: github_repo_audit_22_may_2026.pdf
+2026-06-10 20:32:49  Copied safe source PDF: Josh App Links.docx
+2026-06-10 20:32:50  Copied safe source PDF: Josh App Links.txt
+2026-06-10 20:32:50  Copied safe source PDF: JoshOS Atlas v6 — Single Authoritative Master Plan.docx
+2026-06-10 20:32:50  Copied safe source PDF: Josh’s Everything Map — Table of Contents.docx
+2026-06-10 20:32:50  Copied safe source PDF: SylvieElias_AppDesign_Research (1).pdf
+2026-06-10 20:32:50  Copied safe source PDF: vibe_coding_income_report_2026 (1).pdf
+2026-06-10 20:32:50  Copied safe source PDF: ____Chatgpt Codex VSCode Instructions.docx
+2026-06-10 20:32:50  Copied safe raw-inventory: local-folders-raw.csv
+2026-06-10 20:32:50  Copied safe raw-inventory: git-status-raw.txt
+2026-06-10 20:32:50  Copied safe raw-inventory: joshos-folder-audit-20260610-200423.csv
+2026-06-10 20:32:50  Copied safe raw-inventory: joshos-folder-audit-20260610-200423.txt
+2026-06-10 20:32:50  Copied safe raw-inventory: github-cli-not-installed.txt
+2026-06-10 20:32:50  Step 7: Final scan of clean pack for forbidden patterns...
+2026-06-10 20:32:54  === Remediation Complete ===
+2026-06-10 20:32:54  Clean pack folder: C:\dev\joshos-atlas\claude-project-upload-clean-pack
+2026-06-10 20:32:54  Clean pack zip: C:\dev\joshos-atlas\claude-project-upload-clean-pack.zip
+2026-06-10 20:32:54  Quarantine folder: C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\excluded-private\quarantined-from-safe-pack-20260610-203249
+2026-06-10 20:32:54  Private review folder: C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\excluded-private\source-pdfs-private-review
+2026-06-10 20:32:54  Manual security worksheet: C:\dev\joshos-atlas\joshos-atlas-prep\joshos-atlas-prep claude\SECURITY_PRECHECK_MANUAL_REVIEW_REQUIRED.md

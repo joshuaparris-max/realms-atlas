@@ -1,0 +1,1 @@
+{"id":"deploy_001","type":"deployment","name":"[SAMPLE-HUB] dashboard","url":"https://[sample].vercel.app/dashboard","linked_repo":"repo_001","platform":"vercel","status":"unknown","sensitivity":"private-low","source_ids":["doc_app_links_2026"],"confidence":"medium"}

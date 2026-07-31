@@ -1,0 +1,1 @@
+{"id":"risk_001","type":"privacy_risk","title":"[SAMPLE] Child name in public repo","severity":"P0","status":"open","affected_sources":["repo_sample_child_app"],"recommended_action":"Make repo private, rename to neutral name, disable public deployment","source_ids":["doc_family_public_threat_model"],"confidence":"high"}

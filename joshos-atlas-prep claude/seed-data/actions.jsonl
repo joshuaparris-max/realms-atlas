@@ -1,0 +1,2 @@
+{"id":"action_001","type":"action","title":"[SAMPLE] Remediate P0 privacy risk — child-named public repo","priority":"P0","status":"open","project_id":"repo_sample_child_app","source_ids":["risk_001"],"owner":"Josh","timeframe":"24 hours","confidence":"high"}
+{"id":"action_002","type":"action","title":"[SAMPLE] Decide canonical hub repo","priority":"P1","status":"open","project_id":"repo_001","source_ids":["doc_app_audit_2026"],"owner":"Josh","timeframe":"this week","confidence":"high"}

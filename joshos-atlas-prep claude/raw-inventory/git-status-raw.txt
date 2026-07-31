@@ -1,0 +1,51 @@
+﻿==================================================
+REPO: AIDM
+PATH: C:\dev\AIDM
+==================================================
+REMOTE:
+origin	https://github.com/parristechservices-prog/AIDungeonMaster.git (fetch)
+origin	https://github.com/parristechservices-prog/AIDungeonMaster.git (push)
+
+BRANCH:
+copilot/groq-live-mode-and-safe-fallback
+
+STATUS:
+
+LAST COMMIT:
+4fdc39b 2026-06-09 Improve mobile play layout
+
+
+==================================================
+REPO: GROQCHAT
+PATH: C:\dev\GROQCHAT
+==================================================
+REMOTE:
+origin	https://github.com/joshuaparris-max/GroqChat.git (fetch)
+origin	https://github.com/joshuaparris-max/GroqChat.git (push)
+
+BRANCH:
+main
+
+STATUS:
+
+LAST COMMIT:
+377f4f7 2026-06-09 Add typing indicator and cancel button
+
+
+==================================================
+REPO: GROQCHAT2
+PATH: C:\dev\GROQCHAT2
+==================================================
+REMOTE:
+origin	https://github.com/joshuaparris-max/groqchat2.git (fetch)
+origin	https://github.com/joshuaparris-max/groqchat2.git (push)
+
+BRANCH:
+main
+
+STATUS:
+
+LAST COMMIT:
+4784b67 2026-06-09 Add prompt guard to Groq message builder for stronger API prompt grounding
+
+
