@@ -148,8 +148,8 @@ class GameState {
 // Global game state instance
 let gameState;
 
-// Initialize game state when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
+// Function to initialize game state after data is loaded
+window.initGame = function() {
     gameState = new GameState();
     window.gameState = gameState;
 
@@ -164,4 +164,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     saveSystem.startAutoSave();
-});
+};

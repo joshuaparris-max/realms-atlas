@@ -8,8 +8,8 @@
   - Open + Code links per portal
 - **New: "The Revived Isles"** region (`portals.json`) listing all 12 revived repos with live links.
 - Map and list cross-link to each other.
+- **Unified Data**: The entire map and launcher now read from `portals.json` as the single source of truth.
 
 ## Next steps
-- Migrate the map to read from `portals.json` so there's one source of truth.
 - Automated link-checker to flag dead `live` URLs and flip them to "repair".
 - An About/Journal screen describing the portfolio.

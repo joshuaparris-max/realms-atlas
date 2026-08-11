@@ -6,3 +6,11 @@ Thumbs.db
 
 # Personal scratch reference (contains local paths & private links)
 Josh App Links.txt
+node_modules/
+dist/
+build/
+playwright-report/
+test-results/
+.env
+.last-run.json
+coverage/

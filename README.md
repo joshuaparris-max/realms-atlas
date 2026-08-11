@@ -59,9 +59,9 @@ This is not just a launcher—it's a complete playable game where you explore a 
 ├── index.html          # Main HTML structure
 ├── styles.css          # Game styling and themes
 ├── app.js             # Main application logic
+├── portals.json       # Portal catalog and regions data (Single Source of Truth)
 ├── data/
-│   ├── regions.js     # World region definitions
-│   └── portals.js     # Portal catalog
+│   └── regions.js     # World region definitions
 └── systems/
     ├── save.js        # Save/load system
     ├── map.js         # Map generation and management
@@ -74,24 +74,22 @@ This is not just a launcher—it's a complete playable game where you explore a 
 
 To add a new portal to the game:
 
-1. Edit `data/portals.js`
-2. Add a new object to the `PORTALS` array with these properties:
-   ```javascript
-   {
-       id: 'unique-id',
-       title: 'Display Name',
-       url: 'https://example.com',
-       region: 'region_id',
-       subArea: 'Location Description',
-       x: 10, y: 15,  // Coordinates in world
-       portalType: 'stable', // stable, echo, broken, sealed, hidden
-       status: 'active',     // active, broken, etc.
-       description: 'Long description',
-       shortLabel: 'Short name',
-       tags: ['tag1', 'tag2'],
-       flavourText: 'Atmospheric description',
-       discovered: false,
-       visited: false
+1. Edit `portals.json`
+2. Add a new object to the `portals` array of the appropriate region:
+   ```json
+       "name": "Display Name",
+       "live": "https://example.com",
+       "region": "region_id",
+       "subArea": "Location Description",
+       "x": 10, "y": 15,
+       "portalType": "stable",
+       "mapStatus": "active",
+       "desc": "Long description",
+       "shortLabel": "Short name",
+       "tags": ["tag1", "tag2"],
+       "flavourText": "Atmospheric description",
+       "discovered": false,
+       "visited": false
    }
    ```
 
@@ -126,8 +124,8 @@ Works in all modern browsers with JavaScript enabled:
 
 This game is designed to be easily extensible. To add new regions, portals, or features:
 
-1. **New Regions**: Add to `data/regions.js` and update `REGION_CONNECTIONS`
-2. **New Portals**: Add to `data/portals.js` array
+1. **New Regions**: Add to `data/regions.js` and update `REGION_CONNECTIONS`, then add the region to `portals.json`
+2. **New Portals**: Add to the `portals` array in `portals.json` under the desired region
 3. **New Features**: Extend the system classes in `/systems/`
 4. **UI Changes**: Modify `styles.css` and `index.html`
 
@@ -140,7 +138,7 @@ doubles as a fun showcase piece and a practical launcher.
 
 ## Portal & link validation notes
 
-- Portals are defined in [`data/portals.js`](data/portals.js) — currently **61 portals**.
+- Portals are defined in [`portals.json`](portals.json) — currently **61+ portals**.
 - Each portal has a `portalType` that signals link health:
   - `stable` (42) — expected to work
   - `echo` (16) — alternate version or mirror of another project
@@ -148,8 +146,8 @@ doubles as a fun showcase piece and a practical launcher.
   - `sealed` (1) — intentionally not yet accessible
 - Because portals open external deployments (Vercel, GitHub Pages, itch.io), links can rot
   over time. Treat `portalType` as the source of truth and update it as deployments change.
-- To re-validate, open `data/portals.js` and check each `url`. Mark anything dead as
-  `portalType: 'broken'` so it renders accordingly instead of silently failing.
+- To re-validate, open `portals.json` and check each `live` url. Mark anything dead as
+  `portalType: 'broken'` and `status: 'repair'` so it renders accordingly instead of silently failing.
 
 ## Portal status (known)
 
