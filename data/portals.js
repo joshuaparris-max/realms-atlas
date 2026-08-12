@@ -21,7 +21,7 @@ const PORTALS = [
     {
         id: 'joshhub-apps',
         title: 'JoshHub Apps',
-        url: 'https://josh-hub-96no.vercel.app/apps',
+        url: 'https://josh-hub-96no.vercel.app/apps/index.html',
         region: 'infinite_city',
         subArea: 'App Gallery',
         x: 14,
@@ -72,7 +72,7 @@ const PORTALS = [
     {
         id: 'parris-life-dashboard',
         title: 'Parris Life Dashboard',
-        url: 'https://joshualparris.github.io/Parris-Life-Dashboard/',
+        url: 'https://joshualparris.github.io/parris-life-dashboard/index.html',
         region: 'infinite_city',
         subArea: 'Personal Hub',
         x: 17,
@@ -125,7 +125,7 @@ const PORTALS = [
     {
         id: 'dcs-companion',
         title: 'DCS Companion',
-        url: 'https://joshuaparris-max.github.io/DCSCompanion',
+        url: 'https://joshuaparris-max.github.io/dcscompanion/index.html',
         region: 'makers_strand',
         subArea: 'School Workshop',
         x: 12,
@@ -333,7 +333,7 @@ const PORTALS = [
     {
         id: 'whispering-wilds-main',
         title: 'Whispering Wilds',
-        url: 'https://joshuaparrisdadlan-stack.github.io/whispering-wilds/',
+        url: 'https://joshuaparrisdadlan-stack.github.io/whispering-wilds/index.html',
         region: 'whispering_forest',
         subArea: 'Ancient Grove',
         x: 5,
@@ -367,7 +367,7 @@ const PORTALS = [
     {
         id: 'whirring-wilderness',
         title: 'Whirring Wilderness',
-        url: 'https://joshuaparris-max.github.io/WhirringWilderness/',
+        url: 'https://joshuaparris-max.github.io/whirringwilderness/index.html',
         region: 'whispering_forest',
         subArea: 'Mechanical Thicket',
         x: 6,
@@ -384,7 +384,7 @@ const PORTALS = [
     {
         id: 'whispering-wilds-reloaded',
         title: 'Whispering Wilds Reloaded',
-        url: 'https://joshuaparrisdadlan-stack.github.io/WhisperingWildsReloaded/',
+        url: 'https://joshuaparrisdadlan-stack.github.io/whisperingwildsreloaded/index.html',
         region: 'whispering_forest',
         subArea: 'Regrown Grove',
         x: 3,
@@ -401,7 +401,7 @@ const PORTALS = [
     {
         id: 'wild2',
         title: 'Wild2',
-        url: 'https://joshuaparris-max.github.io/Wild2/',
+        url: 'https://joshuaparris-max.github.io/wild2/index.html',
         region: 'whispering_forest',
         subArea: 'Second Wilderness',
         x: 7,
@@ -454,7 +454,7 @@ const PORTALS = [
     {
         id: 'null',
         title: 'Null',
-        url: 'https://joshuaparrisdadlan-stack.github.io/Null/',
+        url: 'https://joshuaparrisdadlan-stack.github.io/null/index.html',
         region: 'nullstone_caverns',
         subArea: 'Silent Chamber',
         x: 10,
@@ -505,7 +505,7 @@ const PORTALS = [
     {
         id: 'mysterious-depths',
         title: 'Mysterious Depths',
-        url: 'https://joshuaparrisdadlan-stack.github.io/MysteriousDepths/',
+        url: 'https://joshuaparrisdadlan-stack.github.io/mysteriousdepths/index.html',
         region: 'nullstone_caverns',
         subArea: 'Hidden Cavern',
         x: 8,
@@ -541,7 +541,7 @@ const PORTALS = [
     {
         id: 'orgscape',
         title: 'OrgScape',
-        url: 'https://joshuaparrisdadlan-stack.github.io/OrgScape/',
+        url: 'https://joshuaparrisdadlan-stack.github.io/orgscape/index.html',
         region: 'infinite_city',
         subArea: 'Organization District',
         x: 19,
@@ -577,7 +577,7 @@ const PORTALS = [
     {
         id: 'campaign-copilot',
         title: 'Campaign Copilot',
-        url: 'https://joshuaparrisdadlan-stack.github.io/campaign-copilot/',
+        url: 'https://joshuaparrisdadlan-stack.github.io/campaign-copilot/index.html',
         region: 'scholars_reach',
         subArea: 'Campaign Library',
         x: 18,
@@ -594,7 +594,7 @@ const PORTALS = [
     {
         id: 'king-killer-chronicle',
         title: 'King Killer Chronicle Adventure',
-        url: 'https://joshualparris.github.io/kkc-adventure/',
+        url: 'https://joshualparris.github.io/kkc-adventure/index.html',
         region: 'scholars_reach',
         subArea: 'Chronicles Hall',
         x: 17,
@@ -611,7 +611,7 @@ const PORTALS = [
     {
         id: 'elodin-lore',
         title: 'Elodin Lore',
-        url: 'https://joshualparris.github.io/ElodinDeepLore/',
+        url: 'https://joshualparris.github.io/elodindeeplore/index.html',
         region: 'scholars_reach',
         subArea: 'Lore Tower',
         x: 19,
@@ -645,7 +645,7 @@ const PORTALS = [
     {
         id: 'elodin-lore-alternate',
         title: 'Elodin Lore (Alternate)',
-        url: 'https://joshualparris.github.io/elodin-deep-lore/',
+        url: 'https://joshualparris.github.io/elodin-deep-lore/index.html',
         region: 'scholars_reach',
         subArea: 'Alternate Archive',
         x: 20,
@@ -783,7 +783,7 @@ const PORTALS = [
     {
         id: 'forbidden-quests',
         title: 'Forbidden Quests',
-        url: 'https://joshuaparris-max.github.io/ForbiddenQuests/',
+        url: 'https://joshuaparris-max.github.io/forbiddenquests/index.html',
         region: 'sword_coast_marches',
         subArea: 'Quest Board',
         x: 22,
@@ -834,7 +834,7 @@ const PORTALS = [
     {
         id: 'letsplaydnd',
         title: 'LetsPlayDnd / Simple RPG',
-        url: 'https://joshuaparrisdadlan-stack.github.io/LetsPlayDnd/',
+        url: 'https://joshuaparrisdadlan-stack.github.io/letsplaydnd/index.html',
         region: 'sword_coast_marches',
         subArea: 'D&D Inn',
         x: 16,
@@ -972,7 +972,7 @@ const PORTALS = [
     {
         id: 'wastes-courier-roguelike',
         title: 'Wastes Courier Roguelike',
-        url: 'https://joshualparris.github.io/wastes-courier-roguelike/',
+        url: 'https://joshualparris.github.io/wastes-courier-roguelike/index.html',
         region: 'boundary_road_frontier',
         subArea: 'Courier Station',
         x: 16,
@@ -1008,7 +1008,7 @@ const PORTALS = [
     {
         id: 'serenity-firefly-rpg',
         title: 'Serenity / Firefly RPG',
-        url: 'http://skill-deploy-ubokv1ax71.vercel.app/',
+        url: 'https://skill-deploy-ubokv1ax71.vercel.app/',
         region: 'outer_sky',
         subArea: 'Serenity Ship',
         x: 22,
@@ -1025,7 +1025,7 @@ const PORTALS = [
     {
         id: 'exitbackup',
         title: 'exitbackup',
-        url: 'https://joshuaparris-max.github.io/exitbackup/',
+        url: 'https://joshuaparris-max.github.io/exitbackup/index.html',
         region: 'outer_sky',
         subArea: 'Backup Dimension',
         x: 21,
@@ -1042,7 +1042,7 @@ const PORTALS = [
     {
         id: 'games-umbrella',
         title: 'Games (Umbrella)',
-        url: 'https://joshuaparrisdadlan-stack.github.io/Games/',
+        url: 'https://joshuaparrisdadlan-stack.github.io/games/index.html',
         region: 'outer_sky',
         subArea: 'Game Nexus',
         x: 23,

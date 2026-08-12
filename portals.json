@@ -12,7 +12,7 @@
           "status": "live",
           "desc": "Local-first daily micro-coach: check-in, cards, reflections, streak.",
           "repo": "https://github.com/joshuaparris-max/JoshCoach",
-          "live": "https://joshuaparris-max.github.io/JoshCoach/"
+          "live": "https://joshuaparris-max.github.io/joshcoach/index.html"
         },
         {
           "name": "FireReady",
@@ -20,7 +20,7 @@
           "status": "live",
           "desc": "Household fire-readiness checklist + scenario practice (non-official).",
           "repo": "https://github.com/joshuaparris-max/JoshFireAwareness",
-          "live": "https://joshuaparris-max.github.io/JoshFireAwareness/"
+          "live": "https://joshuaparris-max.github.io/joshfireawareness/index.html"
         },
         {
           "name": "JoshHub-Local",
@@ -44,7 +44,7 @@
           "status": "live",
           "desc": "Serendipity launcher — pick a vibe, get a random pick.",
           "repo": "https://github.com/joshuaparris-max/random-play",
-          "live": "https://joshuaparris-max.github.io/random-play/"
+          "live": "https://joshuaparris-max.github.io/random-play/index.html"
         },
         {
           "name": "realms-atlas",
@@ -52,7 +52,7 @@
           "status": "live",
           "desc": "This fantasy portfolio world map + launcher.",
           "repo": "https://github.com/joshuaparris-max/realms-atlas",
-          "live": "https://joshuaparris-max.github.io/realms-atlas/"
+          "live": "https://joshuaparris-max.github.io/realms-atlas/index.html"
         },
         {
           "name": "StarHaven",
@@ -60,7 +60,7 @@
           "status": "live",
           "desc": "Original tiny space RPG — 3 missions, 6 endings.",
           "repo": "https://github.com/joshuaparris-max/StarHaven",
-          "live": "https://joshuaparris-max.github.io/StarHaven/"
+          "live": "https://joshuaparris-max.github.io/starhaven/index.html"
         },
         {
           "name": "Wild2",
@@ -68,7 +68,7 @@
           "status": "live",
           "desc": "Original wilderness fantasy RPG — 4 classes, 5 endings.",
           "repo": "https://github.com/joshuaparris-max/Wild2",
-          "live": "https://joshuaparris-max.github.io/Wild2/"
+          "live": "https://joshuaparris-max.github.io/wild2/index.html"
         },
         {
           "name": "AnchorFlow",
@@ -76,7 +76,7 @@
           "status": "live",
           "desc": "Calm focus flow: anchor, ground, focus timer, close.",
           "repo": "https://github.com/joshuaparris-max/AnchorFlow",
-          "live": "https://joshuaparris-max.github.io/AnchorFlow/"
+          "live": "https://joshuaparris-max.github.io/anchorflow/index.html"
         },
         {
           "name": "JoshChess",
@@ -84,7 +84,7 @@
           "status": "live",
           "desc": "Beginner/kid chess mini-trainer (companion to the main Chess app).",
           "repo": "https://github.com/joshuaparris-max/JoshChess",
-          "live": "https://joshuaparris-max.github.io/JoshChess/"
+          "live": "https://chess-kappa-five.vercel.app/"
         },
         {
           "name": "skills",
@@ -92,7 +92,7 @@
           "status": "live",
           "desc": "IT support skill-tree tracker with confidence + evidence.",
           "repo": "https://github.com/joshuaparris-max/skills",
-          "live": "https://joshuaparris-max.github.io/skills/"
+          "live": "https://joshuaparris-max.github.io/skills/index.html"
         },
         {
           "name": "Waypoint",
@@ -100,7 +100,7 @@
           "status": "live",
           "desc": "Decision navigator: overwhelm to one clear next step.",
           "repo": "https://github.com/joshuaparris-max/Waypoint",
-          "live": "https://joshuaparris-max.github.io/Waypoint/"
+          "live": "https://joshuaparris-max.github.io/waypoint/index.html"
         }
       ]
     },
@@ -116,7 +116,7 @@
           "status": "live",
           "desc": "The main Whispering Wilds adventure game.",
           "repo": "",
-          "live": "https://joshuaparrisdadlan-stack.github.io/whispering-wilds/",
+          "live": "https://joshuaparrisdadlan-stack.github.io/whispering-wilds/index.html",
           "region": "whispering_forest",
           "subArea": "Ancient Grove",
           "x": 5,
@@ -165,7 +165,7 @@
           "status": "prototype",
           "desc": "Alternate wilderness adventure.",
           "repo": "",
-          "live": "https://joshuaparris-max.github.io/WhirringWilderness/",
+          "live": "https://joshuaparris-max.github.io/whirringwilderness/index.html",
           "region": "whispering_forest",
           "subArea": "Mechanical Thicket",
           "x": 6,
@@ -189,7 +189,7 @@
           "status": "prototype",
           "desc": "Reloaded version of the whispering wilds.",
           "repo": "",
-          "live": "https://joshuaparrisdadlan-stack.github.io/WhisperingWildsReloaded/",
+          "live": "https://joshuaparrisdadlan-stack.github.io/whisperingwildsreloaded/index.html",
           "region": "whispering_forest",
           "subArea": "Regrown Grove",
           "x": 3,
@@ -213,7 +213,7 @@
           "status": "prototype",
           "desc": "Sequel to the wilderness adventures.",
           "repo": "",
-          "live": "https://joshuaparris-max.github.io/Wild2/",
+          "live": "https://joshuaparris-max.github.io/wild2/index.html",
           "region": "whispering_forest",
           "subArea": "Second Wilderness",
           "x": 7,
@@ -292,7 +292,7 @@
           "status": "live",
           "desc": "The Null text adventure game.",
           "repo": "",
-          "live": "https://joshuaparrisdadlan-stack.github.io/Null/",
+          "live": "https://joshuaparrisdadlan-stack.github.io/null/index.html",
           "region": "nullstone_caverns",
           "subArea": "Silent Chamber",
           "x": 10,
@@ -365,7 +365,7 @@
           "status": "prototype",
           "desc": "Alternate version of Mystery Depths.",
           "repo": "",
-          "live": "https://joshuaparrisdadlan-stack.github.io/MysteriousDepths/",
+          "live": "https://joshuaparrisdadlan-stack.github.io/mysteriousdepths/index.html",
           "region": "nullstone_caverns",
           "subArea": "Hidden Cavern",
           "x": 8,
@@ -445,7 +445,7 @@
           "status": "live",
           "desc": "A curated gallery of applications and tools.",
           "repo": "",
-          "live": "https://josh-hub-96no.vercel.app/apps",
+          "live": "https://josh-hub-96no.vercel.app/apps/index.html",
           "region": "infinite_city",
           "subArea": "App Gallery",
           "x": 14,
@@ -517,7 +517,7 @@
           "status": "live",
           "desc": "Personal dashboard for life management.",
           "repo": "",
-          "live": "https://joshualparris.github.io/Parris-Life-Dashboard/",
+          "live": "https://joshualparris.github.io/parris-life-dashboard/index.html",
           "region": "infinite_city",
           "subArea": "Personal Hub",
           "x": 17,
@@ -589,7 +589,7 @@
           "status": "live",
           "desc": "Organization and management game.",
           "repo": "",
-          "live": "https://joshuaparrisdadlan-stack.github.io/OrgScape/",
+          "live": "https://joshuaparrisdadlan-stack.github.io/orgscape/index.html",
           "region": "infinite_city",
           "subArea": "Organization District",
           "x": 19,
@@ -645,7 +645,7 @@
           "status": "live",
           "desc": "D&D campaign management tool.",
           "repo": "",
-          "live": "https://joshuaparrisdadlan-stack.github.io/campaign-copilot/",
+          "live": "https://joshuaparrisdadlan-stack.github.io/campaign-copilot/index.html",
           "region": "scholars_reach",
           "subArea": "Campaign Library",
           "x": 18,
@@ -669,7 +669,7 @@
           "status": "live",
           "desc": "King Killer Chronicle inspired adventure.",
           "repo": "",
-          "live": "https://joshualparris.github.io/kkc-adventure/",
+          "live": "https://joshualparris.github.io/kkc-adventure/index.html",
           "region": "scholars_reach",
           "subArea": "Chronicles Hall",
           "x": 17,
@@ -693,7 +693,7 @@
           "status": "live",
           "desc": "Deep lore exploration of Elodin.",
           "repo": "",
-          "live": "https://joshualparris.github.io/ElodinDeepLore/",
+          "live": "https://joshualparris.github.io/elodindeeplore/index.html",
           "region": "scholars_reach",
           "subArea": "Lore Tower",
           "x": 19,
@@ -741,7 +741,7 @@
           "status": "prototype",
           "desc": "Alternate version of Elodin lore.",
           "repo": "",
-          "live": "https://joshualparris.github.io/elodin-deep-lore/",
+          "live": "https://joshualparris.github.io/elodin-deep-lore/index.html",
           "region": "scholars_reach",
           "subArea": "Alternate Archive",
           "x": 20,
@@ -941,7 +941,7 @@
           "status": "live",
           "desc": "Forbidden quests and adventures.",
           "repo": "",
-          "live": "https://joshuaparris-max.github.io/ForbiddenQuests/",
+          "live": "https://joshuaparris-max.github.io/forbiddenquests/index.html",
           "region": "sword_coast_marches",
           "subArea": "Quest Board",
           "x": 22,
@@ -1014,7 +1014,7 @@
           "status": "prototype",
           "desc": "D&D adventure game.",
           "repo": "",
-          "live": "https://joshuaparrisdadlan-stack.github.io/LetsPlayDnd/",
+          "live": "https://joshuaparrisdadlan-stack.github.io/letsplaydnd/index.html",
           "region": "sword_coast_marches",
           "subArea": "D&D Inn",
           "x": 16,
@@ -1165,7 +1165,7 @@
           "status": "live",
           "desc": "Companion app for Dubbo Christian School.",
           "repo": "",
-          "live": "https://joshuaparris-max.github.io/DCSCompanion",
+          "live": "https://joshuaparris-max.github.io/dcscompanion/index.html",
           "region": "makers_strand",
           "subArea": "School Workshop",
           "x": 12,
@@ -1515,7 +1515,7 @@
           "status": "live",
           "desc": "Roguelike courier game in the wastes.",
           "repo": "",
-          "live": "https://joshualparris.github.io/wastes-courier-roguelike/",
+          "live": "https://joshualparris.github.io/wastes-courier-roguelike/index.html",
           "region": "boundary_road_frontier",
           "subArea": "Courier Station",
           "x": 16,
@@ -1570,7 +1570,7 @@
           "status": "live",
           "desc": "Firefly/Serenity inspired RPG.",
           "repo": "",
-          "live": "http://skill-deploy-ubokv1ax71.vercel.app/",
+          "live": "https://skill-deploy-ubokv1ax71.vercel.app/",
           "region": "outer_sky",
           "subArea": "Serenity Ship",
           "x": 22,
@@ -1594,7 +1594,7 @@
           "status": "live",
           "desc": "Backup and exit dimension game.",
           "repo": "",
-          "live": "https://joshuaparris-max.github.io/exitbackup/",
+          "live": "https://joshuaparris-max.github.io/exitbackup/index.html",
           "region": "outer_sky",
           "subArea": "Backup Dimension",
           "x": 21,
@@ -1618,7 +1618,7 @@
           "status": "live",
           "desc": "Collection of various games.",
           "repo": "",
-          "live": "https://joshuaparrisdadlan-stack.github.io/Games/",
+          "live": "https://joshuaparrisdadlan-stack.github.io/games/index.html",
           "region": "outer_sky",
           "subArea": "Game Nexus",
           "x": 23,
