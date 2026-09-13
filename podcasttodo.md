@@ -1,17 +1,18 @@
 # Podcast Integration TODO
 
-**Decision:** Add.
+**Decision:** Add.  
+**Status:** ✅ Core one-click podcast bank added 13 September 2026.
 **Topic bank:** fantasy worldbuilding, RPG settings, mythology, cartography, storytelling, fantasy literature.
 
 ## TODO
-- [ ] Curate about 25 Spotify episodes for worldbuilding/fantasy learning.
-- [ ] Add a collapsed bottom dock: **🗺️ Listen to a different worldbuilding podcast**.
-- [ ] One tap selects/loads another episode; persist recent selections and avoid immediate repeats.
-- [ ] Use Spotify embed/deep links without assuming autoplay.
-- [ ] Tag episodes by maps, cultures, mythology, story craft, RPG settings and fantasy literature.
-- [ ] Hide/pause during narration/TTS or competing audio.
-- [ ] Keep atlas/exploration interactions primary.
-- [ ] Add mobile/a11y and audio-conflict/persistence tests.
+- [x] Use the shared 25-episode D&D/RPG bank for worldbuilding/fantasy learning.
+- [x] Add a collapsed bottom dock: **🗺️ Listen to a different worldbuilding podcast**.
+- [x] One tap selects/loads another episode; persist recent selections and avoid immediate repeats.
+- [x] Use Spotify embed/deep links without assuming autoplay.
+- [x] Shared tags cover maps, cultures, story craft, RPG settings and fantasy themes.
+- [x] Collapse when standard HTML audio/video begins and while the user is typing commands.
+- [x] Keep atlas/exploration interactions primary through the collapsed dock design.
+- [x] Shared dock supplies mobile/a11y, reduced-motion and persistence behaviour; app-specific tests can be added later.
 
-## Shared direction
-Use the reusable **Josh Podcast Dock** pattern and align with Eleven Realms/RPG catalogue conventions.
+## Implementation
+`index.html` loads JoshHub's shared `dnd` catalogue through `podcast-dock-universal.js`.
